@@ -1,75 +1,44 @@
-# Nuxt Minimal Starter
+# 💰 Loan Calculator
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+แอปคำนวณสินเชื่อแบบ interactive พร้อมแสดงกราฟ, ตารางผ่อนชำระ และ export รายงาน
 
-## Setup
+## Features
 
-Make sure to install dependencies:
+- กรอกข้อมูลสินเชื่อ: วงเงิน, ดอกเบี้ย, ระยะเวลา
+- เลือกประเภทการชำระ (ต้น+ดอก, ดอกอย่างเดียว ฯลฯ)
+- แสดงผลลัพธ์: ค่างวด, ดอกเบี้ยรวม, ตารางผ่อนรายเดือน
+- แผนภูมิ: Pie, Bar, Line
+- Export PDF/Excel
+- บันทึกหลายรายการไว้เปรียบเทียบ
+- Authentication
+- Supabase Auth: Register, Login, Logout
+- Middleware ป้องกัน route
+- จำ session
+
+## Tech Stack
+
+- Nuxt 3 + TypeScript
+- TailwindCSS + ShadCN-UI
+- Pinia (State management)
+- Supabase (Auth + Storage)
+- Chart.js / Recharts
+- UI shadcn-vue
+
+## วิธี Setup
 
 ```bash
-# npm
-npm install
+# 1. Clone repo
+git clone https://github.com/Chidchai/Loan-Calculator
+cd loan-calculator
 
-# pnpm
+# 2. Install dependencies
 pnpm install
 
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
+# 3. Run dev
 pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+## Demo Credentials
 
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Email: demo@loanapp.com  
+Password: demo1234
